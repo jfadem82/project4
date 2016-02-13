@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/jfadem82/project4/issues"
   },
-  "homepage": "https://github.com/jfadem82/project4#readme"
+  "homepage": "https://github.com/jfadem82/project4#readme",
+  "dependencies": {
+    "aws-sdk": "^2.2.35",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "cors": "^2.7.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jsonwebtoken": "^5.5.4",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.3",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7"
+  }
 }
