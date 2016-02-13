@@ -1,0 +1,19 @@
+{
+  "name": "project4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfadem82/project4.git"
+  },
+  "author": "Josh Fadem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfadem82/project4/issues"
+  },
+  "homepage": "https://github.com/jfadem82/project4#readme"
+}
