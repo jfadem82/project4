@@ -53,8 +53,8 @@ function update(req, res){
 			if(req.body.password) user.password = req.body.password
 
 			user.save(function(err){
-				if(err) res.send(err
-				res.json({success: true, message "User updated, brah!"}))
+				if(err) res.send(err)
+				res.json({success: true, message: "User updated brah"})
 		})
 	})
 }
@@ -104,7 +104,7 @@ function authenticateUser(req, res) {
 function checkUser(req, res, next){
 	//check everywhere for a JWT
 	var token = req.body.token || req.param('token') || req.headers['x-access-token']
-	if token{
+	if (token){
 		jwt.verify(token, mySpecialSecret, function(err, decoded){
 			if(err){
 				res.status(403).send({success: false, message: "Nah brah, token couldn't be decoded!"})

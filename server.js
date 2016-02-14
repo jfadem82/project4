@@ -11,7 +11,7 @@ var
 	jwt = require('jsonwebtoken'),
 	methodOverride = require('method-override'),
 	mongoose = require('mongoose'),
-	logger = require('morgan'),
+	morgan = require('morgan'),
 	port = process.env.port || 3000,
 	path = require('path'),
 	apiRouter = require('./api/routes/userRoutes')

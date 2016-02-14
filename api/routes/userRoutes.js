@@ -1,7 +1,7 @@
 var 
 	express = require('express'),
+	apiRouter = express.Router(),
 	usersController = require('../controllers/usersController'),
-
 	User = require('../models/User')
 
 apiRouter.route('/users')
@@ -10,7 +10,8 @@ apiRouter.route('/users')
 apiRouter.route('/authenticate')
 	.post(usersController.authenticate)
 
-api.use(usersController.checkUser)
+
+apiRouter.use(usersController.checkUser)
 
 apiRouter.route('/users')
 	.get(usersController.index)
