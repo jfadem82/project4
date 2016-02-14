@@ -17,7 +17,10 @@ var
 	apiRouter = require('./api/routes/userRoutes')
 	mongoUri = "mongodb://localhost/project4";
 
-	mongoose.connect(mongoUri)
+	mongoose.connect(mongoUri, function(err){
+  if(err) throw err
+  console.log('Connected to MongoDB')
+})
 
 	server.use(morgan('dev'))
 	server.use(cookieParser())
